@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
 		numberComputedMatrices <- 0
 	}
 	else {
-		for (i=1:numberComputedMatrices) {
+		for (i in 1:numberComputedMatrices) {
 			found <- FALSE
 			#If this is a duplicate
 			if(!(all.equal(computeMatrices[i]$m, x) != TRUE)) {
