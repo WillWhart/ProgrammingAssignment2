@@ -29,7 +29,7 @@ makeCacheMatrix <- function(x = matrix()) {
 			numberComputedMatrices <-  numberComputedMatrices + 1
 		}
 	}
-	return inv1
+	return (inv1)
 }
 
 
@@ -39,5 +39,5 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 	## Call compute inverse
-	return makeCacheMatrix(x)
+	return (makeCacheMatrix(x))
 }
