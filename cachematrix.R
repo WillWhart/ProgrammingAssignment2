@@ -31,20 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
 	}
 	return inv1
 }
-			
-			
-			
-			
-				
-				
-	
-	## If it has been computed, load the pre-computed inverse
-	## else compute the matrix, and load it and inverse 
-	## return this inverse
-	
 
-
-}
 
 
 ## Write a short comment describing this function
@@ -52,4 +39,5 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 	## Call compute inverse
+	return makeCacheMatrix(x)
 }
